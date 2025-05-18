@@ -1,0 +1,6 @@
+*/**/.undodir
+lazy-lock.json
+.aider*
+.envrc
+*/**/tmux/plugins/*
+.DS_Store

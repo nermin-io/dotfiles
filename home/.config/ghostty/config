@@ -1,0 +1,15 @@
+theme = GruvboxDarkHard
+font-family = "ZedMono Nerd Font Mono"
+font-size = 15
+
+title = ghostty
+clipboard-read = allow
+clipboard-write = allow
+
+cursor-style-blink = true
+
+window-colorspace = display-p3
+window-padding-color = background
+window-padding-balance = true
+window-padding-x = 0
+window-padding-y = 0

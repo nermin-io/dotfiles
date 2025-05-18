@@ -1,0 +1,23 @@
+# set arguments for all 'brew install --cask' commands
+cask_args appdir: "~/Applications", require_sha: true
+
+brew "fish"
+brew "fisher"
+brew "jq"
+brew "yq"
+brew "neovim"
+brew "ripgrep"
+brew "stow"
+brew "tmux"
+brew "tree"
+brew "go"
+brew "curl"
+brew "autoconf"
+brew "automake"
+brew "delve"
+brew "fastfetch"
+brew "golangci-lint"
+brew "minikube"
+brew "terraform"
+brew "make"
+brew "tree-sitter"
