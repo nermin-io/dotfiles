@@ -2,6 +2,8 @@ theme = GruvboxDarkHard
 font-family = "ZedMono Nerd Font Mono"
 font-size = 15
 
+shell-integration = fish
+
 title = ghostty
 clipboard-read = allow
 clipboard-write = allow
