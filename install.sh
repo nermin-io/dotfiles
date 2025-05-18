@@ -30,7 +30,7 @@ fi
 echo "Installing base packages from Brewfile..."
 if brew bundle --file=./packages/bundle; then
   echo "Base packages install successfully"
-  read -p "Do you want to install work-specific packages from ./packages/bundle.work? (y/N): " install_work_deps
+  read -r -p "Do you want to install work-specific packages from ./packages/bundle.work? (y/N): " install_work_deps
 
   if [[ "$install_work_deps" =~ ^[Yy]$ ]]; then
     echo "Installing work packages..."
