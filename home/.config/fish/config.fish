@@ -17,6 +17,5 @@ end
 theme_gruvbox dark hard
 
 set -gx EDITOR "nvim"
-set -gx PAGER "nvim +Man!"
 set -gx MANPAGER 'nvim +Man!'
 set -gx PNPM_HOME "/Users/nerminsehic/Library/pnpm"
