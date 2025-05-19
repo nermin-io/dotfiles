@@ -82,18 +82,18 @@ if command_exists fish; then
   # Check if fish is already in /etc/shells
   if ! grep -q "$fish_path" /etc/shells; then
     echo "Adding $fish_path to /etc/shells"
-    echo "$fish_path | sudo tee -a /etc/shells"
+    echo "$fish_path" | sudo tee -a /etc/shells
   else
     echo "Fish is already listed in /etc/shells"
   fi
 
-  # Set fish as the default shell for the current user
+ # Set fish as the default shell for the current user
   if [ "$SHELL" != "$fish_path" ]; then
     echo "Changing the default shell to fish for user $USER"
     chsh -s "$fish_path"
-    echo "Fish is already the default shell."
+    echo "Default shell changed to fish. Please log out and log back in for changes to take effect."
   else
-    echo "Fish is already the default shell"
+    echo "Fish is already the default shell."
   fi
 else
   echo "Fish is not installed. Please install it first using your package manager."
