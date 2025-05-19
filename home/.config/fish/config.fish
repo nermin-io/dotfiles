@@ -19,4 +19,8 @@ theme_gruvbox dark hard
 set -gx EDITOR "nvim"
 set -gx MANPAGER 'nvim +Man!'
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if test (uname -m) = "arm64"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+  eval "$(/usr/local/bin/brew shellenv)"
+end
