@@ -18,3 +18,5 @@ theme_gruvbox dark hard
 
 set -gx EDITOR "nvim"
 set -gx MANPAGER 'nvim +Man!'
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
