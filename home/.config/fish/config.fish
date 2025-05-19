@@ -6,16 +6,17 @@ if status is-interactive
 end
 
 # Google Cloud SDK PATH setup
-if test -f /Users/nerminsehic/google-cloud-sdk/path.fish.inc
-    source /Users/nerminsehic/google-cloud-sdk/path.fish.inc
+if test -f "$HOME/google-cloud-sdk/path.fish.inc"
+    source "$HOME/google-cloud-sdk/path.fish.inc"
 end
 
-if test -f /Users/nerminsehic/google-cloud-sdk/completion.bash.inc
-    bass source /Users/nerminsehic/google-cloud-sdk/completion.bash.inc
+if test -f "$HOME/google-cloud-sdk/completion.bash.inc"
+  bass source "$HOME/google-cloud-sdk/completion.bash.inc"
 end
 
 theme_gruvbox dark hard
 
 set -gx EDITOR "nvim"
 set -gx MANPAGER 'nvim +Man!'
-set -gx PNPM_HOME "/Users/nerminsehic/Library/pnpm"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
