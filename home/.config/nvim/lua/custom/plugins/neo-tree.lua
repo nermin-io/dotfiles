@@ -16,6 +16,7 @@ return {
         always_show = {
           '.golangci.yml',
           '.config',
+          '.gitignore',
         },
         always_show_by_pattern = {
           '.env*',
