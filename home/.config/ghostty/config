@@ -1,6 +1,5 @@
 theme = GruvboxDarkHard
-font-family = "ZedMono Nerd Font Mono"
-font-size = 15
+font-size=13
 
 shell-integration = fish
 
