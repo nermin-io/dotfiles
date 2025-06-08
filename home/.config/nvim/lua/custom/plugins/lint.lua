@@ -41,6 +41,7 @@ return {
       -- }
       lint.linters_by_ft = {
         markdown = { 'markdownlint' },
+        python = { 'flake8' },
         terraform = { 'tflint' },
         json = { 'jsonlint' },
         go = { 'golangcilint' },
