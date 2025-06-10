@@ -87,7 +87,7 @@ if command_exists fish; then
     echo "Fish is already listed in /etc/shells"
   fi
 
- # Set fish as the default shell for the current user
+  # Set fish as the default shell for the current user
   if [ "$SHELL" != "$fish_path" ]; then
     echo "Changing the default shell to fish for user $USER"
     chsh -s "$fish_path"
