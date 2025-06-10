@@ -1,5 +1,5 @@
-theme = GruvboxDarkHard
 font-size=13
+theme = "Kanagawa Dragon"
 
 shell-integration = fish
 

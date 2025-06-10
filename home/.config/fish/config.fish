@@ -14,8 +14,6 @@ if test -f "$HOME/google-cloud-sdk/completion.bash.inc"
   bass source "$HOME/google-cloud-sdk/completion.bash.inc"
 end
 
-theme_gruvbox dark hard
-
 set -gx EDITOR "nvim"
 set -gx MANPAGER 'nvim +Man!'
 
