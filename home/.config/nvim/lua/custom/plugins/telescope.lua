@@ -29,11 +29,15 @@ return {
       --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
       --   },
       -- },
-      -- pickers = {
-      --   find_files = {
-      --     hidden = true,
-      --   },
-      -- },
+      pickers = {
+        find_files = {
+          hidden = true,
+          file_ignore_patterns = {
+            '%.git/', -- ignore anything in a .git directory
+            '^.git$', -- ignore .git directory itself
+          },
+        },
+      },
       extensions = {
         ['ui-select'] = {
           require('telescope.themes').get_dropdown(),
