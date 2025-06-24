@@ -2,6 +2,7 @@ return {
   'webhooked/kanso.nvim',
   priority = 1000,
   config = function()
+    local colors = require('kanso.colors').setup { theme = 'ink' }
     require('kanso').setup {
       bold = true, -- enable bold fonts
       italics = true, -- enable italics
@@ -17,7 +18,12 @@ return {
       terminalColors = true, -- define vim.g.terminal_color_{0,17}
       colors = { -- add/modify theme and palette colors
         palette = {},
-        theme = { zen = {}, pearl = {}, ink = {}, all = {} },
+        theme = {
+          zen = {},
+          pearl = {},
+          ink = {},
+          all = {},
+        },
       },
       theme = 'ink', -- Load "zen" theme
       background = { -- map the value of 'background' option to a theme

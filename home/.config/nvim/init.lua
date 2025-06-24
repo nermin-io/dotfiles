@@ -17,6 +17,7 @@ vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'
 end)
 
+vim.o.winborder = 'rounded'
 vim.o.breakindent = true
 vim.o.undofile = true
 vim.o.ignorecase = true
@@ -77,6 +78,7 @@ rtp:prepend(lazypath)
 
 local config = {
   ui = {
+    border = 'rounded',
     icons = vim.g.have_nerd_font and {} or {
       cmd = '⌘',
       config = '🛠',
