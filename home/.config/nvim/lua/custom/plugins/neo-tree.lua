@@ -11,6 +11,7 @@ return {
     { '<leader>e', ':Neotree toggle<CR>', desc = 'NeoTree toggle', silent = true },
   },
   opts = {
+    sources = { 'filesystem', 'buffers', 'git_status', 'document_symbols' },
     filesystem = {
       filtered_items = {
         visible = true,
