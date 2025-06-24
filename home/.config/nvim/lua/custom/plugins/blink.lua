@@ -72,6 +72,14 @@ return { -- Autocompletion
       documentation = {
         auto_show = false,
         auto_show_delay_ms = 500,
+        window = {
+          border = 'rounded',
+          winhighlight = 'Normal:Normal,FloatBorder:FloatBorder,CursorLine:BlinkCmpDocCursorLine,Search:None',
+        },
+      },
+      menu = {
+        border = 'rounded',
+        winhighlight = 'Normal:Normal,FloatBorder:FloatBorder,CursorLine:BlinkCmpDocCursorLine,Search:None',
       },
     },
 
