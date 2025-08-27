@@ -17,14 +17,6 @@ end
 set -gx EDITOR "nvim"
 set -gx MANPAGER 'nvim +Man!'
 
-# Zendesk config
-set -gx ZENDESK_SUBDOMAIN 'rendr'
-set -gx ZENDESK_EMAIL 'nermin@rendr.delivery'
-set -gx ZENDESK_API_TOKEN 'RM5pO3AaHrXDIpqv4B2t0w4tfJTnEaXWIVnpZRtd'
-
-# Paths
-fish_add_path "$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
-
 if test (uname -m) = "arm64"
   eval "$(/opt/homebrew/bin/brew shellenv)"
 else
