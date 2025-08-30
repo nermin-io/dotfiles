@@ -30,3 +30,6 @@ if test (uname -m) = "arm64"
 else
   eval "$(/usr/local/bin/brew shellenv)"
 end
+
+# uv
+fish_add_path "$HOME/.local/bin"
