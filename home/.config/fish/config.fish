@@ -17,6 +17,12 @@ end
 set -gx EDITOR "nvim"
 set -gx MANPAGER 'nvim +Man!'
 
+function nvm
+  bass source (brew --prefix nvm)/nvm.sh --no-use ';' nvm $argv
+end
+set -x NVM_DIR ~/.nvm
+nvm use default --silent # Or a specific version you want to use by default
+
 if test (uname -m) = "arm64"
   eval "$(/opt/homebrew/bin/brew shellenv)"
 else
