@@ -4,3 +4,5 @@ lazy-lock.json
 .envrc
 */**/tmux/plugins/*
 .DS_Store
+home/.config/configstore/
+home/.config/github-copilot/

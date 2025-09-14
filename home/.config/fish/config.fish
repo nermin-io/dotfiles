@@ -17,6 +17,9 @@ end
 set -gx EDITOR "nvim"
 set -gx MANPAGER 'nvim +Man!'
 
+set -g LDFLAGS -L/opt/homebrew/opt/openssl/lib
+set -g CPPFLAGS -I/opt/homebrew/opt/openssl/include
+
 function nvm
   bass source (brew --prefix nvm)/nvm.sh --no-use ';' nvm $argv
 end
@@ -31,3 +34,5 @@ end
 
 # uv
 fish_add_path "$HOME/.local/bin"
+fish_add_path /opt/homebrew/opt/libpq/bin
+fish_add_path /opt/homebrew/opt/openssl/bin
