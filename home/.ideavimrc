@@ -53,6 +53,35 @@ map <leader>ci <Action>(Inline)
 map <leader>pv <Action>(SplitVertically)
 map <leader>ph <Action>(SplitHorizontally)
 
+" Bookmarks
+nmap <leader>bt <Action>(ToggleBookmark)
+nmap <leader>bm <Action>(ToggleBookmarkWithMnemonic)
+nmap <leader>bs <Action>(ActivateBookmarksToolWindow)
+nmap <leader>bp <Action>(GotoPreviousBookmark)
+nmap <leader>bn <Action>(GotoNextBookmark)
+nmap <leader>bl <Action>(ShowBookmarks)
+
+nmap <leader>b0 <Action>(GotoBookmark0)
+nmap <leader>b1 <Action>(GotoBookmark1)
+nmap <leader>b2 <Action>(GotoBookmark2)
+nmap <leader>b3 <Action>(GotoBookmark3)
+nmap <leader>b4 <Action>(GotoBookmark4)
+nmap <leader>b5 <Action>(GotoBookmark5)
+nmap <leader>b6 <Action>(GotoBookmark6)
+nmap <leader>b7 <Action>(GotoBookmark7)
+nmap <leader>b8 <Action>(GotoBookmark8)
+nmap <leader>b9 <Action>(GotoBookmark9)
+
+vmap <leader>bt <Action>(ToggleBookmark)
+xmap <leader>bt <Action>(ToggleBookmark)
+vmap <leader>bm <Action>(ToggleBookmarkWithMnemonic)
+xmap <leader>bm <Action>(ToggleBookmarkWithMnemonic)
+
+" Navigation and Jumps
+map <leader>jl <Action>(ShowNavigationHistory)
+map <leader>jp <Action>(Back)
+map <leader>jn <Action>(Forward)
+
 "" Map \b to toggle the breakpoint on the current line
 " map \b <Action>(ToggleLineBreakpoint)
 
